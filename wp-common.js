@@ -108,17 +108,49 @@ $(".group-eur input").on("click", function() {
 
 });
 
-// выделяем только один чекбокс system-block
+// выделяем только один чекбокс group-ukr
 
-$(".system-block input").on("click", function() {
+$(".group-ukr input").on("click", function() {
 
-	if($(".system-block input:checked").length >= 1) { // Не больше 2-х checkbox
+	if($(".group-ukr input:checked").length >= 1) { // Не больше 2-х checkbox
 		
-		$(".system-block input:not(:checked)").attr("disabled", true);
+		$(".group-ukr input:not(:checked)").attr("disabled", true);
 	
 	} else {
 		
-		$(".system-block input:disabled").attr("disabled", false);
+		$(".group-ukr input:disabled").attr("disabled", false);
+	
+	}
+
+});
+
+// выделяем только один чекбокс system-block 1
+
+$("#system-ukr-block input").on("click", function() {
+
+	if($("#system-ukr-block input:checked").length >= 1) { // Не больше 2-х checkbox
+		
+		$("#system-ukr-block input:not(:checked)").attr("disabled", true);
+	
+	} else {
+		
+		$("#system-ukr-block input:disabled").attr("disabled", false);
+	
+	}
+
+});
+
+// выделяем только один чекбокс system-block 2
+
+$("#system-eur-block input").on("click", function() {
+
+	if($("#system-eur-block input:checked").length >= 1) { // Не больше 2-х checkbox
+		
+		$("#system-eur-block input:not(:checked)").attr("disabled", true);
+	
+	} else {
+		
+		$("#system-eur-block input:disabled").attr("disabled", false);
 	
 	}
 

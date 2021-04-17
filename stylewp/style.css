@@ -50,7 +50,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
-    /* display: none; */
+    display: none;
   }
   
   .header-block {
@@ -136,21 +136,24 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
   }
   
   .group-eur label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 5px;
   }
   
   .group-eur label input {
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .group-eur-content{
+    width: 180px;
+    margin: 20px;
   }
   
   .total-amount-block {
@@ -194,6 +197,7 @@
   
   .country {
     min-height: 30px;
+    margin-top: 50px;
     margin-bottom: 3.5%;
     padding: 0px 5px 0px 5px;
     display: -webkit-box !important;
@@ -298,6 +302,10 @@
         
     }
 
+    .radio{
+      padding: 5px;
+    }
+
     .system-block-content {
         width: 100%;
         display: -webkit-box;
@@ -323,6 +331,18 @@
         -ms-flex-direction: column;
         flex-direction: column;
         padding: 20px;
+    }
+
+    .group-eur{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .group-eur-content {
+      margin: 0px;
     }
 
     .radio-block-wrapper{
@@ -499,7 +519,7 @@
     text-align: center;
   }
   
-  /* .form-price-ukr {
+  .form-price-ukr {
     display: none;
   }
   
@@ -541,6 +561,6 @@
   }
   
   .ukraine-content {
-    display: none; */
+    display: none;
   }
   /*# sourceMappingURL=style.css.map */

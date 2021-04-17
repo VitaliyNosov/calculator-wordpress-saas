@@ -129,7 +129,7 @@
                     <h5>Выбрать операционнуя систему:</h5>
                 </div>
                 <hr>
-                <div class="system-block ukr-check">
+                <div id="system-ukr-block" class="system-block ukr-check">
                     <div class="system-block-content">
                         <label><input  data-check="0" class="suport-system-ukr ukr" type="checkbox" name="support-system" value="b2-7">
                             <strong>Linux: </strong>
@@ -159,7 +159,7 @@
     
             <div class="form-software-about-ukr">
                 <div class="country">
-                    <h5>Аренда програмного обеспечения:</h5>
+                    <h5>Лицензия Spla:</h5>
                 </div>
                 <hr>
                 <div class="group-ukr ukr-check">
@@ -181,14 +181,8 @@
             </div>
     
             <div class="total-amount-ukr">
-                <div class="country">
-                    <h5>Стоимость:</h5>
-                </div>
-                <div class="total-amount-block">
-                    <p>Сумма: <strong id="summ1"></strong></p>
-                </div>
-    
-                <hr>
+                
+            <hr>
     
                 <div class="order-header">
                     <h3>Отправить мне на Email</h3>
@@ -205,6 +199,15 @@
     
                 <div class="order-header">
                     <h3>Отправить заказ</h3>
+                </div>
+
+                <!-- Вывод суммы -->
+
+                <div class="country">
+                    <h5>Стоимость:</h5>
+                </div>
+                <div class="total-amount-block">
+                    <p>Сумма: <strong id="summ1"></strong></p>
                 </div>
     
                 <div class="block-form-order">
@@ -314,34 +317,58 @@
                         <h5>Выбрать операционнуя систему:</h5>
                     </div>
                     <hr>
-                    <div class="system-block euro-check">
-                        <label><input class="suport-system-eur" type="radio" name="support-system" value="b2-7">
-                            <strong>Linux: </strong></label>
-                        <label><input class="suport-system-eur" type="radio" name="support-system" value="b2-15">
-                            <strong>Windows: </strong></label>
+                    <div id="system-eur-block" class="system-block euro-check">
+                        <div class="system-block-content">
+                            <label><input  data-check="0" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                                <strong>Linux: </strong>
+                            </label>
+                            <label><input  data-check="19.8" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                                <strong>Windows: </strong>
+                            </label>
+                        </div>
+                        <div class="system-block-content">
+                            <label><input  data-check="31.25" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                                <strong>Windows B2-7 </strong>(remout)
+                            </label>
+                            <label><input  data-check="93.75" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                                <strong>Windows B2-15 </strong>(remout)
+                            </label>
+                        </div>
+                        <div class="system-block-content">
+                            <label><input  data-check="156.25" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                                <strong>Windows B2-30 </strong>(remout)
+                            </label>
+                            <label><input  data-check="312.5" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                                <strong>Windows B2-60 </strong>(remout)
+                            </label>
+                        </div>
                     </div>
                 </div>
         
                 <div class="form-software-about-eur">
                     <div class="country">
-                        <h5>Аренда програмного обеспечения:</h5>
+                        <h5>Лицензия:</h5>
                     </div>
                     <hr>
-                    <div class="group-eur">
-                        <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="1">
-                            <strong>BAS</strong></label>               
-                        <label for="#"><input class="software-about-eur" type="checkbox" name="server" value="2">
-                            <strong>1C</strong></label>                    
+                    <div class="group-eur euro-check">
+                        <div class="group-eur-content">
+                            <label for="#"><input data-check="61.25" class="software-about-eur" type="checkbox" name="server" value="1">
+                                <strong>LicenceSpla B2-7</strong></label>               
+                            <label for="#"><input data-check="123.75" class="software-about-eur" type="checkbox" name="server" value="2">
+                                <strong>LicenceSpla B2-15</strong>
+                            </label>
+                        </div>
+                        <div class="group-eur-content">
+                            <label for="#"><input data-check="186.25" class="software-about-eur" type="checkbox" name="server" value="3">
+                                <strong>LicenceSpla B2-30</strong></label>               
+                            <label for="#"><input data-check="342.5" class="software-about-eur" type="checkbox" name="server" value="4">
+                                <strong>LicenceSpla B2-60</strong>
+                            </label> 
+                        </div>                    
                     </div>
                 </div>
         
                 <div class="total-amount-eur">
-                    <div class="country">
-                        <h5>Стоимость:</h5>
-                    </div>
-                    <div class="total-amount-block">
-                        <p>Сумма: <strong id="summ2"></strong></p>
-                    </div>
         
                     <hr>
     
@@ -357,9 +384,19 @@
                         </div>
                         </div>
                     </div>
+
     
                     <div class="order-header">
                         <h3>Отправить заказ</h3>
+                    </div>
+
+                    <!-- Вывод суммы -->
+
+                    <div class="country">
+                        <h5>Стоимость:</h5>
+                    </div>
+                    <div class="total-amount-block">
+                        <p>Сумма: <strong id="summ2"></strong></p>
                     </div>
     
                     <div class="block-form-order">
