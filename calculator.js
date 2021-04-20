@@ -3,11 +3,31 @@ $(function() {
     
 // Украина:
 
+// Значения radio кнопок
+
+$('.radio-block input').on('click', function() {
+    $('#outputUkrOne').text('Cервер: ' + $('.radio-block input:checked').val() );
+});
+
+// Значения первого ряда checkbox
+
+$('.system-block-content input').on('click', function() {
+    $('#outputUkrTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
+});
+
+// Значения третего ряда checkbox
+
+$('.group-ukr-content input').on('click', function() {
+    $('#outputUkrThree').text('Лицензия: ' + $('.group-ukr-content input:checked').val() );
+});
+
+
 	// Переменные с нуливыми значениями	
 	
 	var ukr=0, ukrInput=0; check1=0;	
 	
 	// Обработка поля с radio input 
+
 	
 	$("input[name='ukr']").change(function() {
 		if ($("input[name='ukr']").prop("checked")) {
@@ -37,12 +57,31 @@ $(function() {
 	function summ1(){
 		ukr = Number(ukr);
 		ukrInput = Number(check1);
-		$("#summ1").text( ukr + ukrInput  + ' Euro ' );
+		$("#summ1").html( ukr + ukrInput + ' Euro ' );
 	};
 	summ1();
 
 
 // Европа:
+
+
+// Значения radio кнопок
+
+$('.radio input').on('click', function() {
+    $('#outputEuroOne').text('Сервер: ' + $('.radio input:checked').val() );
+});
+
+// Значения первого ряда checkbox
+
+$('.system-block-content input').on('click', function() {
+    $('#outputEuroTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
+});
+
+// Значения третего ряда checkbox
+
+$('.group-eur-content input').on('click', function() {
+    $('#outputEuroThree').text('Лицензия: ' + $('.group-eur-content input:checked').val() );
+});
 
 
 	// Переменные с нуливыми значениями	
@@ -74,6 +113,8 @@ $(function() {
 	
 	
 	// Обработка и вывод суммы
+
+	
 
 	
 	function summ2(){

@@ -108,20 +108,20 @@
                 <div class="radio-block-wrapper">
                   <div class="radio-block">
                     <label>
-                      <input name="ukr" data-check="18" class="price-ukr" type="radio" name="price" value="b2-7">KVM-50: <strong>18 euro</strong></label>
+                      <input id="checkbox_check" name="ukr" data-check="18" class="price-ukr" type="radio" name="price" value="KVM-50">KVM-50: <strong>18 euro</strong></label>
                   </div>
                   <div class="radio-block">
                     <label>
-                      <input name="ukr" data-check="28.8" class="price-ukr" type="radio" name="price" value="b2-15">KVM-75: <strong>28.8 euro</strong></label>
+                      <input id="checkbox_check" name="ukr" data-check="28.8" class="price-ukr" type="radio" name="price" value="KVM-75">KVM-75: <strong>28.8 euro</strong></label>
                   </div>
       
                   <div class="radio-block">
                     <label>
-                      <input name="ukr" data-check="44.5" class="price-ukr" type="radio" name="price" value="b2-30">KVM-150: <strong>44.4 euro</strong></label>
+                      <input id="checkbox_check" name="ukr" data-check="44.5" class="price-ukr" type="radio" name="price" value="KVM-150">KVM-150: <strong>44.4 euro</strong></label>
                   </div>
                   <div class="radio-block">
                     <label>
-                      <input name="ukr" data-check="75.6" class="price-ukr" type="radio" name="price" value="b2-60">KVM-300: <strong>75.6 euro</strong></label>
+                      <input id="checkbox_check" name="ukr" data-check="75.6" class="price-ukr" type="radio" name="price" value="KVM-300">KVM-300: <strong>75.6 euro</strong></label>
                   </div>
                 </div>
       
@@ -137,31 +137,31 @@
                 <div id="system-ukr-block" class="system-block ukr-check">
                   <div class="system-block-content">
                     <label>
-                      <input data-check="0" class="suport-system-ukr ukr" type="checkbox" name="support-system" value="b2-7">
+                      <input id="checkbox_check" data-check="0" class="suport-system-ukr ukr" type="checkbox" name="support-system" value="Lunux">
                       <strong>Linux: </strong>
                     </label>
                     <label>
-                      <input data-check="19.8" class="suport-system-ukr ukr" type="checkbox" name="support-system" value="b2-7">
+                      <input id="checkbox_check" data-check="19.8" class="suport-system-ukr ukr" type="checkbox" name="support-system" value="Windows">
                       <strong>Windows: </strong>
                     </label>
                   </div>
                   <div class="system-block-content">
                     <label>
-                      <input data-check="18.75" class="suport-system-ukr" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="18.75" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KMV-50">
                       <strong>Windows KMV-50 </strong>(remout)
                     </label>
                     <label>
-                      <input data-check="31.25" class="suport-system-ukr" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="31.25" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KVM-75">
                       <strong>Windows KVM-75 </strong>(remout)
                     </label>
                   </div>
                   <div class="system-block-content">
                     <label>
-                      <input data-check="62.5" class="suport-system-ukr" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="62.5" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KVM-150">
                       <strong>Windows KVM-150 </strong>(remout)
                     </label>
                     <label>
-                      <input data-check="125" class="suport-system-ukr" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="125" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KVM-300">
                       <strong>Windows KVM-300 </strong>(remout)
                     </label>
                   </div>
@@ -176,19 +176,19 @@
                 <div class="group-ukr ukr-check">
                   <div class="group-ukr-content">
                     <label for="#">
-                      <input data-check="37.83" class="software-about-ukr" type="checkbox" name="server" value="1">
+                      <input data-check="37.83" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KMV-50">
                       <strong>LicenceSpla KMV-50</strong></label>
                     <label for="#">
-                      <input data-check="50.33" class="software-about-ukr" type="checkbox" name="server" value="2">
+                      <input data-check="50.33" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KVM-75">
                       <strong>LicenceSpla KVM-75</strong>
                     </label>
                   </div>
                   <div class="group-ukr-content">
                     <label for="#">
-                      <input data-check="81.58" class="software-about-ukr" type="checkbox" name="server" value="3">
+                      <input data-check="81.58" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KMV-150">
                       <strong>LicenceSpla KMV-150</strong></label>
                     <label for="#">
-                      <input data-check="144.08" class="software-about-ukr" type="checkbox" name="server" value="4">
+                      <input data-check="144.08" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KVM-300">
                       <strong>LicenceSpla KVM-300</strong>
                     </label>
                   </div>
@@ -229,10 +229,20 @@
                 <!-- Вывод суммы -->
       
                 <div class="country">
-                  <h5>Стоимость:</h5>
+                  <h5>Ваш заказ:</h5>
+                </div>
+                <div class="server-info-block">
+                  <span id="outputUkrOne"></span>
+                  </br>
+                  <span id="outputUkrTwo"></span>
+                  </br>
+                  <span id="outputUkrThree"></span>
+                  </br>
+                  <span id="outputUkrFour"></span>
                 </div>
                 <div class="total-amount-block">
                   <p>Сумма: <strong id="summ1"></strong></p>
+           
                 </div>
       
                 <!-- form -->
@@ -356,31 +366,31 @@
                 <div id="system-eur-block" class="system-block euro-check">
                   <div class="system-block-content">
                     <label>
-                      <input data-check="0" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="0" class="suport-system-eur" type="checkbox" name="support-system" value="Linux:">
                       <strong>Linux: </strong>
                     </label>
                     <label>
-                      <input data-check="19.8" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="19.8" class="suport-system-eur" type="checkbox" name="support-system" value="Windows:">
                       <strong>Windows: </strong>
                     </label>
                   </div>
                   <div class="system-block-content">
                     <label>
-                      <input data-check="31.25" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="31.25" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-7(remout)">
                       <strong>Windows B2-7 </strong>(remout)
                     </label>
                     <label>
-                      <input data-check="93.75" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="93.75" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-15(remout)">
                       <strong>Windows B2-15 </strong>(remout)
                     </label>
                   </div>
                   <div class="system-block-content">
                     <label>
-                      <input data-check="156.25" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="156.25" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-30(remout)">
                       <strong>Windows B2-30 </strong>(remout)
                     </label>
                     <label>
-                      <input data-check="312.5" class="suport-system-eur" type="checkbox" name="support-system" value="b2-7">
+                      <input data-check="312.5" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-60(remout)">
                       <strong>Windows B2-60 </strong>(remout)
                     </label>
                   </div>
@@ -395,19 +405,19 @@
                 <div class="group-eur euro-check">
                   <div class="group-eur-content">
                     <label for="#">
-                      <input data-check="61.25" class="software-about-eur" type="checkbox" name="server" value="1">
+                      <input data-check="61.25" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-7">
                       <strong>LicenceSpla B2-7</strong></label>
                     <label for="#">
-                      <input data-check="123.75" class="software-about-eur" type="checkbox" name="server" value="2">
+                      <input data-check="123.75" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-15">
                       <strong>LicenceSpla B2-15</strong>
                     </label>
                   </div>
                   <div class="group-eur-content">
                     <label for="#">
-                      <input data-check="186.25" class="software-about-eur" type="checkbox" name="server" value="3">
+                      <input data-check="186.25" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-30">
                       <strong>LicenceSpla B2-30</strong></label>
                     <label for="#">
-                      <input data-check="342.5" class="software-about-eur" type="checkbox" name="server" value="4">
+                      <input data-check="342.5" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-60">
                       <strong>LicenceSpla B2-60</strong>
                     </label>
                   </div>
@@ -448,11 +458,25 @@
                 <!-- Вывод суммы -->
       
                 <div class="country">
-                  <h5>Стоимость:</h5>
+                  <h5>Ваш заказ:</h5>
+                </div>
+
+                <div class="server-info-block">
+                  <span id="outputEuroOne"></span>
+                  </br>
+                  <span id="outputEuroTwo"></span>
+                  </br>
+                  <span id="outputEuroThree"></span>
+                  </br>
+                  <span id="outputEuroFour"></span>
                 </div>
                 <div class="total-amount-block">
                   <p>Сумма: <strong id="summ2"></strong></p>
                 </div>
+
+                <!-- <div class="total-amount-block">
+                  <p>Сумма: <strong id="summ2"></strong></p>
+                </div> -->
       
                 <!-- form -->
       
