@@ -15,7 +15,7 @@ $(function() {
 	
 	$('.system-block-content input').on('click', function() {
 		// $('#outputUkrTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputUkrTwo').val('Операционная система: ' + $('.system-block-content input:checked').val() );
+		$('#outputUkrTwo').val('Cистема: ' + $('.system-block-content input:checked').val() );
 	});
 	
 	// Значения третего ряда checkbox
@@ -82,7 +82,7 @@ $(function() {
 	
 	$('.system-block-content-two input').on('click', function() {
 		// $('#outputEuroTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputEuroTwo').val('Операционная система: ' + $('.system-block-content-two input:checked').val() );
+		$('#outputEuroTwo').val('Cистема: ' + $('.system-block-content-two input:checked').val() );
 	});
 	
 	// Значения третего ряда checkbox
@@ -129,7 +129,7 @@ $(function() {
 		function summ2(){
 			euro = Number(euro);
 			euroInput = Number(check2);
-			$("#summ2").val( euro + euroInput  + ' Euro ' );
+			$("#summ2").val(euro + euroInput  + ' Euro ' );
 		};
 		summ2();
 

@@ -104,7 +104,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   
   .group-ukr label input {
@@ -143,7 +143,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   
   .group-eur label input {
@@ -321,6 +321,22 @@
         margin-top: 2px;
       }
 
+    .system-block-content-two{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+        -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+
+    .system-block-content-two label{
+        margin-top: 2px;
+    }
+
     .group-ukr-content {
         margin: 0px;
       }
@@ -352,6 +368,39 @@
     .radio-block{
         padding: 5px;
     }
+
+    .form-summ-block-one{
+      margin-top: 30px;
+      font-size: 13px;
+    }
+  
+    .form-summ-block-one input{
+      width: 100%;
+      border: none;
+      text-align: center;
+      /* margin-top: -15px; */
+      color: #000;
+      background-color: #F3FBFE;
+      box-shadow: none !important;
+      font-size: 13px;
+    }
+  
+    .form-summ-block-two{
+      margin-top: 30px;
+    }
+  
+    .form-summ-block-two input{
+      width: 100%;
+      border: none;
+      text-align: center;
+      margin-top: -15px;
+      color: #000;
+      background-color: #F3FBFE;
+      box-shadow: none !important;
+      font-size: 13px;
+    }
+
+
   }
   
   
@@ -525,6 +574,36 @@
     text-align: center;
     margin: 0 auto;
 
+  }
+
+  .form-summ-block-one{
+    margin-top: 30px;
+  }
+
+  .form-summ-block-one input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    margin-top: -15px;
+    color: #000;
+    background-color: #F3FBFE;
+    box-shadow: none !important;
+    font-size: 16px;
+  }
+
+  .form-summ-block-two{
+    margin-top: 30px;
+  }
+
+  .form-summ-block-two input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    margin-top: -15px;
+    color: #000;
+    background-color: #F3FBFE;
+    box-shadow: none !important;
+    font-size: 16px;
   }
 
   
