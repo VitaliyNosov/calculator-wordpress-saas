@@ -171,16 +171,6 @@ $(function() {
 
 
 
-// Логика калькулятора ( получаем json )
-
-
-// var servers = $.getJSON('servers.json');
-// console.log(servers)
-
-
-
-
-
 
     
     });
