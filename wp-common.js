@@ -6,18 +6,19 @@ console.log('calculator')
 
 jQuery(function($){
 
-    $(document).ready(function(){
+$(document).ready(function(){
       
-        // Открываем блок по клику на кнопку	
+// Открываем блок по клику на кнопку	
 
 $('#button-click').click(function () {
 	$('#content-block').slideToggle(500);
 });
-$(window).resize(function () {
-	if ($(window).width() > 500) {
-		$('#content-block').removeAttr('style');
-	}
-});
+
+// $(window).resize(function () {
+// 	if ($(window).width() > 500) {
+// 		$('#content-block').removeAttr('style');
+// 	}
+// });
 
 // Украина	
 
