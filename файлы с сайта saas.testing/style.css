@@ -1555,7 +1555,7 @@ select {
           flex-wrap: wrap;
     }
   .system-block-content label {
-      margin-top: 2px;
+      margin-top: 20px;
     }
 
   .system-block-content-two{
@@ -1571,19 +1571,24 @@ select {
   }
 
   .system-block-content-two label{
-      margin-top: 2px;
+      margin-top: 20px;
   }
 
   .group-ukr-content {
-      margin: 0px;
+      margin-top: 10px;
     }
+  
+  /* .radio-block-label{
+    margin-top: 20px !important;
+    border: 1px solid red !important;
+  } */
   
   .group-ukr{
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 20px;
+      /* padding: 20px; */
   }
 
   .group-eur{
@@ -1591,11 +1596,11 @@ select {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .group-eur-content {
-    margin: 0px;
+    margin-top: 10px;
   }
 
   .radio-block-wrapper{
@@ -1606,15 +1611,48 @@ select {
       padding: 5px;
   }
 
+  .form-summ-block-one{
+    margin-top: 30px;
+    font-size: 13px;
+  }
+
+  .form-summ-block-one input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    /* margin-top: -15px; */
+    color: #000;
+    background-color: #F3FBFE;
+    box-shadow: none !important;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .form-summ-block-two{
+    margin-top: 30px;
+  }
+
+  .form-summ-block-two input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    margin-top: -15px;
+    color: #000;
+    background-color: #F3FBFE;
+    box-shadow: none !important;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
 
 }
 
 
 /* Tabs */
 
-label {
-  margin: 0px;
-}
+/* label {
+  border: 1px solid red !important;
+} */
 
 .tabs {
   max-width: 100%;
@@ -1782,6 +1820,38 @@ label {
 
 }
 
+.form-summ-block-one{
+  margin-top: 30px;
+}
+
+.form-summ-block-one input{
+  width: 100%;
+  border: none;
+  text-align: center;
+  margin-top: -15px;
+  color: #000;
+  background-color: #F3FBFE;
+  box-shadow: none !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-summ-block-two{
+  margin-top: 30px;
+}
+
+.form-summ-block-two input{
+  width: 100%;
+  border: none;
+  text-align: center;
+  margin-top: -15px;
+  color: #000;
+  background-color: #F3FBFE;
+  box-shadow: none !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 
 .form-price-ukr {
   display: none;
@@ -1827,8 +1897,6 @@ label {
 .ukraine-content {
   display: none;
 }
-
-
 /*# sourceMappingURL=style.css.map */
 
 /* Оформление отправки сообщения в contact form 7 */
@@ -1846,118 +1914,3 @@ label {
   border-color: #ffb900;
   display: none !important;
 }
-
-
-/* Cтили для перевода суммы */
-
-
-.form-summ-block-one input{
-  width: 55%;
-  height: 100%;
-  border: none;
-  display: flex;
-  justify-content: flex-start;
-  /* margin: 0 auto; */
-  flex-wrap: wrap;
-  /* margin-top: -15px; */
-  color: #000;
-  background-color: #F3FBFE;
-  box-shadow: none !important;
-  font-size: 16px;
-  font-weight: bold;
-  /* border: 1px solid red; */
-}
-
-.form-summ-block-two input{
-  width: 55%;
-  height: 100%;
-  border: none;
-  display: flex;
-  justify-content: flex-start;
-  /* margin: 0 auto; */
-  flex-wrap: wrap;
-  /* margin-top: -15px; */
-  color: #000;
-  background-color: #F3FBFE;
-  box-shadow: none !important;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.form-input-block{
-  width: 30%;
-  margin: 0 auto;
-  height: 40px;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-  /* border: 1px solid green; */
-}
-
-@media (max-width: 767px) {
-  .form-input-block{
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    /* justify-content: flex-start; */
-    font-size: 18px;
-    font-weight: bold;
-    /* border: 1px solid red !important; */
-    color: #000;
-  }
-
-  .form-summ-block-one input{
-    width: 100%;
-    height: 10px;
-    border: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: #000;
-    background-color: #F3FBFE;
-    box-shadow: none !important;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .form-summ-block-two input{
-    width: 100%;
-    height: 10px;
-    border: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: #000;
-    background-color: #F3FBFE;
-    box-shadow: none !important;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-}
-
-@media (max-width: 1200px) {
-  .form-input-block{
-    width: 50%;
-    display: flex !important;
-    justify-content: center !important;
-    /* border: 1px solid green; */
-  }
-  .form-summ-block-one input{
-    width: 100% !important;
-    justify-content: center;
-    
-  }
-
-  .form-summ-block-two input{
-    width: 100% !important;
-  }
-}
-  

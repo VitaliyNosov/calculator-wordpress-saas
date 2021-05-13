@@ -6,23 +6,23 @@ $(function() {
 	// Значения radio кнопок
 	
 	$('.radio-block input').on('click', function() {
-		// $('#outputUkrOne').text('Cервер: ' + $('.radio-block input:checked').val());
-		$('#outputUkrOne').val('Cервер: ' + $('.radio-block input:checked').val());
+		// $('#outputUkrOne').val('Cервер: ' + $('.radio-block input:checked').val());
+		$('#outputUkrOne').val( $('.radio-block input:checked').val());
 		
 	});
 	
 	// Значения первого ряда checkbox
 	
 	$('.system-block-content input').on('click', function() {
-		// $('#outputUkrTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputUkrTwo').val('Cистема: ' + $('.system-block-content input:checked').val() );
+		// $('#outputUkrTwo').val('Cистема: ' + $('.system-block-content input:checked').val() );
+		$('#outputUkrTwo').val($('.system-block-content input:checked').val() );
 	});
 	
 	// Значения третего ряда checkbox
 	
 	$('.group-ukr-content input').on('click', function() {
-		// $('#outputUkrThree').text('Лицензия: ' + $('.group-ukr-content input:checked').val() );
-		$('#outputUkrThree').val('Лицензия: ' + $('.group-ukr-content input:checked').val() );
+		// $('#outputUkrThree').val('Лицензия: ' + $('.group-ukr-content input:checked').val() );
+		$('#outputUkrThree').val( $('.group-ukr-content input:checked').val() );
 	});
 	
 	
@@ -72,8 +72,8 @@ $(function() {
 	// Значения radio кнопок
 	
 	$('.radio input').on('click', function() {
-		// $('#outputEuroOne').text('Сервер: ' + $('.radio input:checked').val());
-		$('#outputEuroOne').val('Сервер: ' + $('.radio input:checked').val());
+		// $('#outputEuroOne').val('Сервер: ' + $('.radio input:checked').val());
+		$('#outputEuroOne').val( $('.radio input:checked').val());
 		
 	
 	});
@@ -81,15 +81,15 @@ $(function() {
 	// Значения первого ряда checkbox
 	
 	$('.system-block-content-two input').on('click', function() {
-		// $('#outputEuroTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputEuroTwo').val('Cистема: ' + $('.system-block-content-two input:checked').val() );
+		// $('#outputEuroTwo').val('Cистема: ' + $('.system-block-content-two input:checked').val() );
+		$('#outputEuroTwo').val( $('.system-block-content-two input:checked').val() );
 	});
 	
 	// Значения третего ряда checkbox
 	
 	$('.group-eur-content input').on('click', function() {
-		// $('#outputEuroThree').text('Лицензия: ' + $('.group-eur-content input:checked').val() );
-		$('#outputEuroThree').val('Лицензия: ' + $('.group-eur-content input:checked').val() );
+		// $('#outputEuroThree').val('Лицензия: ' + $('.group-eur-content input:checked').val() );
+		$('#outputEuroThree').val( $('.group-eur-content input:checked').val() );
 	});
 	
 	
